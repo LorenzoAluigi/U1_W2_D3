@@ -215,7 +215,7 @@ case crewMass === 500 :
 case crewMass > 700 && crewMass <= 900:
   console.log ("warning: load is over 700")
   break
-case crewMass > 900 && crewMass >= 1000 :
+case crewMass > 900 && crewMass <= 1000 :
   console.log ("critical load: Over 900")
   break
 case crewMass > 1000 :
@@ -230,6 +230,13 @@ default:
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 
+for (let i = 0; i < starWarsCharacters.length; i++ ) {
+if (starWarsCharacters[i].gender === "n/a" ) {
+  starWarsCharacters[i].gender = "robot"
+}
+}
+console.log(starWarsCharacters);
+
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Usa uno più for loop per raggiungere il risultato
@@ -238,6 +245,14 @@ default:
 
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
+
+for (let i = 0; i < starWarsCharacters.length; i++ ) {
+
+
+
+  
+}
+
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
