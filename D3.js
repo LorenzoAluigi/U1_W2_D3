@@ -246,13 +246,14 @@ console.log(starWarsCharacters);
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
 
-for (let i = 0; i < starWarsCharacters.length; i++ ) {
+for (let i = 0; i < characters.length; i++ ) {
 
-
-
-  
+  for (let j = 0; j < femaleCharacters.length; j++) {
+    if (characters[i] === femaleCharacters[j].name) {characters.splice ([i],1) }
+  }
 }
 
+console.log (characters)
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
